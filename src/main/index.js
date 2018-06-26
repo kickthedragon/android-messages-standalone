@@ -15,8 +15,6 @@ let mainWindow;
 
 let pluginName;
 
-//app.commandLine.appendSwitch('--enable-sandbox');
-
 function createMainWindow() {
 	const window = new BrowserWindow({
 		minWidth: 800,
@@ -32,26 +30,7 @@ function createMainWindow() {
 		window.webContents.openDevTools();
 	}
 
-	// if (isDevelopment) {
-	// 	window.loadURL(`http://localhost:${process.env.ELECTRON_WEBPACK_WDS_PORT}`);
-	// } else {
-	// 	window.loadURL(
-	// 		formatUrl({
-	// 			pathname: path.join(__dirname, 'index.html'),
-	// 			protocol: 'file',
-	// 			slashes: true
-	// 		})
-	// 	);
-	// }
-
 	window.loadURL('https://messages.android.com/');
-
-	// window.onload = function() {
-	// 	let webview = document.createElement('webview');
-	// 	document.body.appendChild(webview);
-	// 	webview.setAttribute('plugins', 'on');
-	// 	webview.src = 'http://www.adobe.com/software/flash/about/';
-	// };
 
 	window.on('closed', () => {
 		mainWindow = null;
