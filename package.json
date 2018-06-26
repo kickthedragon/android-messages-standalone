@@ -59,5 +59,18 @@
 				}
 			]
 		}
-	}
+	},
+	"keywords": ["android", "messages", "standalone", "pc", "mac", "linux", "electron", "wrapper"],
+	"contributors": [
+		{
+			"name": "Eric Remigino",
+			"email": "eric@systematical.io",
+			"url": "http://ericremigino.com"
+		},
+		{
+			"name": "Dane Fitzmaurice",
+			"email": "dane@systematical.io",
+			"url": "http://danefitzmaurice.com"
+		}
+	]
 }
